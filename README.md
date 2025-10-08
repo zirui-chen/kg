@@ -4,7 +4,7 @@ KG‑BiLM is a **three‑step recipe** for turning a decoder‑style large langu
 
 1. **Bidirectional Knowledge Attention (BKA)** – we lift the causal mask so every token/entity can attend to both past *and* future neighbours that are within a prescribed hop distance in the graph.
 2. **Knowledge‑Masked Prediction (KMP)** – a structure‑aware variant of masked LM that hides entity/text tokens and asks the model to recover them from the *preceding* representation, forcing it to leverage global KG cues as well as local context.
-3. **Contrastive Graph Semantic Aggregation (CGSA)** – an InfoNCE loss that pulls together two augmented views of the same sub‑graph and pushes away others, preserving discriminative topology. fileciteturn1file9L86-L90
+3. **Contrastive Graph Semantic Aggregation (CGSA)** – an InfoNCE loss that pulls together two augmented views of the same sub‑graph and pushes away others, preserving discriminative topology.
 
 > The combination yields unified embeddings that respect KG structure *and* nuanced linguistic semantics, surpassing prior KGE and PLM baselines on WN18RR, FB15k‑237, Wikidata5M, and zero‑shot entity splits.
 
